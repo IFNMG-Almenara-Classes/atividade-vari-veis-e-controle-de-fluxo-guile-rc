@@ -11,20 +11,23 @@ public class Principal {
         float altura = s.nextFloat();
 
         float imc = peso / (altura * altura);
+
+        String estado;
         if (imc < 18.5) {
-            System.out.println("Magreza");
+            estado = "Magreza";
         } else if (imc < 25) {
-            System.out.println("Saudável");
+            estado = "Saudável";
         } else if (imc < 30) {
-            System.out.println("Sobrepeso");
+            estado = "Sobrepeso";
         } else if (imc < 35) {
-            System.out.println("Obesidade Grau I");
+            estado = "Obesidade Grau I";
         } else if (imc < 40) {
-            System.out.println("Obesidade Grau II (Severa)");
+            estado = "Obesidade Grau II (Severa)";
         } else {
-            System.out.println("Obesidade Grau III (Mórbida)");
+            estado = "Obesidade Grau III (Mórbida)";
         }
 
+        System.out.printf("Seu IMC é %.1f e sua classificação: %s", imc, estado);
         s.close();
     }
 }
