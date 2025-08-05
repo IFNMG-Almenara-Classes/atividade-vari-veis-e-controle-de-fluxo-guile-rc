@@ -5,7 +5,7 @@ public class Principal {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
 
-        int entrada = 0;
+        int entrada;
         int media = 0;
         int contador = 0;
         do {
