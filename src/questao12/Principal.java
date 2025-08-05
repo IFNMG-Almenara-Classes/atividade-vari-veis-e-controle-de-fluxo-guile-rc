@@ -12,7 +12,8 @@ public class Principal {
             System.out.print("Insira um número: ");
             entrada = s.nextInt();
             media += entrada;
-            contador++;
+            if (entrada != 0)
+                contador++;
         } while (entrada != 0);
 
         System.out.println("\nA média é: " + media / contador);
